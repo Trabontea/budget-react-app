@@ -1,44 +1,17 @@
 import { createStore, combineReducers } from "redux";
-import { entriesReducer } from "../reducers/entries.reducers";
+import { composeWithDevTools } from "redux-devtools-extension";
+import entriesReducer from "../reducers/entries.reducers";
+import modalReducer from "../reducers/modals.reducers";
 
-const configuredStore = () => {
+const configureStore = () => {
   const combineAllReducers = combineReducers({
     entries: entriesReducer,
+    modals: modalReducer,
   });
 
-  const store = createStore(combineAllReducers);
+  const store = createStore(combineAllReducers, composeWithDevTools());
   console.log("store.getState() before::", store.getState());
   return store;
 };
 
-export default configuredStore;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default configureStore;

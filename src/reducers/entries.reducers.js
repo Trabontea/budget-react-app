@@ -8,6 +8,13 @@ const entriesReducer = (state = initialEntries, action) => {
     case "REMOVE_ENTRY":
       newEntries = state.filter((entry) => entry.id !== action.payload.id);
       return newEntries;
+    case "UPDATE_ENTRY":
+      newEntries = [...state];
+      const index = newEntries.findIndex(
+        (entry) => entry.id === action.payload.id
+      );
+      newEntries[index] = { ...action.payload.entry };
+      return newEntries;
     default:
       return state;
   }
@@ -16,7 +23,7 @@ const entriesReducer = (state = initialEntries, action) => {
 const initialEntries = [
   {
     id: 1,
-    description: "work income",
+    description: "work income from redux",
     value: 1000,
     isExpense: false,
   },
@@ -30,7 +37,13 @@ const initialEntries = [
     id: 3,
     description: "power bill",
     value: 40,
-    isExpense: false,
+    isExpense: true,
+  },
+  {
+    id: 4,
+    description: "Leasing bill",
+    value: 80,
+    isExpense: true,
   },
 ];
 

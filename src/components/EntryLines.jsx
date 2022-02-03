@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from 'semantic-ui-react'
 import EntryLine from './EntryLine'
 
-const EntryLines = ({entries, deleteEntry, setIsOpen, editEntry}) => {
+const EntryLines = ({entries, setIsOpen, editEntry}) => {
   return (
     <Container>
     {entries.map((entry) => (
@@ -10,7 +10,6 @@ const EntryLines = ({entries, deleteEntry, setIsOpen, editEntry}) => {
         key={entry.id}
         // entry={entry}
         {...entry}
-        deleteEntry={deleteEntry}
         setIsOpen={setIsOpen}
         editEntry={editEntry}
       />
