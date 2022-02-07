@@ -15,7 +15,7 @@ function App() {
   const [total, setTotal] = useState(0);
   const [entry, setEntry]  = useState();
 
-  // State from Redux
+  // State from Redux cu useSelector
   const entries = useSelector((state) => state.entries);
   const {isOpen, id } = useSelector((state) => state.modals);
   
@@ -28,8 +28,8 @@ function App() {
     });
     console.log('index', index)
     setEntry(entries[index])
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen, id]);
+    
+  }, [isOpen, id, entries]);
 
   // ruleaza de fiecare data cand se introduce/sterge o intrare
   useEffect(() => {
