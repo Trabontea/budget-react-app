@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import { removeEntryRedux } from '../actions/entries.actions';
 import { openEditModal } from '../actions/modals.action';
 
-const EntryLine = ({id, description, value, isExpense=false, editEntry }) => {
+const EntryLine = ({id, description, value, isExpense=false }) => {
   const dispatch = useDispatch();
  
   return (
@@ -13,7 +13,7 @@ const EntryLine = ({id, description, value, isExpense=false, editEntry }) => {
           <Grid columns={3} textAlign="right">
             <Grid.Row>
               <Grid.Column width={10} textAlign="left">
-               {description }
+               { description }
               </Grid.Column>
               <Grid.Column width={3} textAlign="right">
                 {Number(value)}
