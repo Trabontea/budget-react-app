@@ -16,7 +16,7 @@ const EntryLine = ({id, description, value, isExpense=false }) => {
                { description }
               </Grid.Column>
               <Grid.Column width={3} textAlign="right">
-                {Number(value)}
+                {isNaN(Number(value)) ? 0 : Number(value)}
               </Grid.Column>
               <Grid.Column width={3}>
                 <Icon 

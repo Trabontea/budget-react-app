@@ -45,7 +45,7 @@ function useEntryDetails(desc="", val="", isExp = true) {
   function resetValues() {
     setDescription("");
     setValue("");
-    setIsExpense("");
+    setIsExpense(true);
   }
 
   return {

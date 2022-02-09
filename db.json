@@ -1,30 +1,123 @@
 {
-  "entries" : [
-    { 
-      "id": 1,
-      "description": "work income from redux",
-      "value": 1000,
-      "isExpense": false
+  "entries": [
+    {
+      "id": "54f48f8f-df58-4ccb-a363-4bf68ad2f34c",
+      "description": "Venit"
     },
     {
-      "id": 2,
-      "description": "water bill",
-      "value": 20,
-      "isExpense": true
+      "id": "b92422cc-0c11-4ee2-bb77-0fc9b1c4034b",
+      "description": "Curent Electric"
     },
-      {
-        "id": 3,
-        "description": "power bill",
-        "value": 40,
-        "isExpense": true
-      },
-      {
-        "id": 4,
-        "description": "Leasing bill",
-        "value": 80,
-        "isExpense": true
-      }
+    {
+      "id": "8b1f11bf-da0c-44bf-9591-7e367b005ec6",
+      "description": "Intrtinere"
+    },
+    {
+      "id": "4b6ce75f-32ec-4412-9169-d28bf1613ca1",
+      "description": "Gaz"
+    },
+    {
+      "id": "7ff3ae80-275d-48a4-9c65-690c302f9f45",
+      "description": "Leasing"
+    },
+    {
+      "id": "e5aaed7f-189e-40f1-9a83-ee04befd3ddc",
+      "description": "rata1"
+    },
+    {
+      "id": "609acc52-e46c-43ee-922d-a326838fa1d6",
+      "description": "Rata2"
+    },
+    {
+      "id": "1b9f6c4b-7bff-4739-bb50-0e7eec75216b",
+      "description": "Telefon, Internet Cablu"
+    },
+    {
+      "id": "0d006f38-f620-4f40-bf84-97ac9dfa1e0f",
+      "description": "card star"
+    },
+    {
+      "id": "2df817f7-6da3-4329-ba4f-9a1afa02917d",
+      "description": "alta1"
+    },
+    {
+      "id": "217cae2a-c655-435f-9ef9-5d7b723d0cbe",
+      "description": "alta 2"
+    },
+    {
+      "id": "d48a3f28-663c-4e89-9856-f614451bbb2a",
+      "description": "alta 3"
+    },
+    {
+      "id": "a5332106-d9b3-4247-b8a8-313140f1a0b3",
+      "description": "alta 4"
+    }
+  ],
+  "values": [
+    {
+      "id": "54f48f8f-df58-4ccb-a363-4bf68ad2f34c",
+      "isExpense": false,
+      "value": "10000"
+    },
+    {
+      "id": "b92422cc-0c11-4ee2-bb77-0fc9b1c4034b",
+      "isExpense": true,
+      "value": "300"
+    },
+    {
+      "id": "8b1f11bf-da0c-44bf-9591-7e367b005ec6",
+      "isExpense": true,
+      "value": "200"
+    },
+    {
+      "id": "4b6ce75f-32ec-4412-9169-d28bf1613ca1",
+      "isExpense": true,
+      "value": "300"
+    },
+    {
+      "id": "7ff3ae80-275d-48a4-9c65-690c302f9f45",
+      "isExpense": true,
+      "value": "2100"
+    },
+    {
+      "id": "e5aaed7f-189e-40f1-9a83-ee04befd3ddc",
+      "isExpense": true,
+      "value": "1200"
+    },
+    {
+      "id": "609acc52-e46c-43ee-922d-a326838fa1d6",
+      "isExpense": true,
+      "value": "600"
+    },
+    {
+      "id": "1b9f6c4b-7bff-4739-bb50-0e7eec75216b",
+      "isExpense": true,
+      "value": "100"
+    },
+    {
+      "id": "0d006f38-f620-4f40-bf84-97ac9dfa1e0f",
+      "isExpense": true,
+      "value": "600"
+    },
+    {
+      "id": "2df817f7-6da3-4329-ba4f-9a1afa02917d",
+      "isExpense": true,
+      "value": "300"
+    },
+    {
+      "id": "217cae2a-c655-435f-9ef9-5d7b723d0cbe",
+      "isExpense": true,
+      "value": "10"
+    },
+    {
+      "id": "d48a3f28-663c-4e89-9856-f614451bbb2a",
+      "isExpense": true,
+      "value": "30"
+    },
+    {
+      "id": "a5332106-d9b3-4247-b8a8-313140f1a0b3",
+      "isExpense": true,
+      "value": "30"
+    }
   ]
 }
-
-

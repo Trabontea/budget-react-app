@@ -7,6 +7,8 @@ import EntryLines from "./components/EntryLines";
 import ModalEdit from "./components/ModalEdit";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { getAllEntries } from "./actions/entries.actions";
 
 function App() {
   // State Local
@@ -23,10 +25,10 @@ function App() {
   // pentru a se completa cu datele inregistrate, edit
   useEffect(() => {
     const index = entries.findIndex(entry => { 
-      console.log('entry', entry);
+      //console.log('entry - APP.js:', entry);
      return entry.id === id
     });
-    console.log('index', index)
+    //console.log('index - App.js:', index)
     setEntry(entries[index])
     
   }, [isOpen, id, entries]);
@@ -47,6 +49,13 @@ function App() {
     setTotalExpense(totalExpense);
     //console.log(`total income is ${totalIncome} and ${totalExpense}`);
   }, [entries]);
+
+  
+  const dispatch = useDispatch()
+  // get the data with request
+  useEffect(()=> {
+    dispatch(getAllEntries())
+  }, [dispatch])
 
   return (
     <Container>

@@ -29,7 +29,7 @@ const EntryForm = ({description, value, isExpense, setDescription, setValue, set
             toggle 
             label='Is expense'
             checked={isExpense}
-            onChange={()=>setIsExpense(oldState => !oldState)} 
+            onChange={()=>setIsExpense((isExp) => !isExp)} 
           />
         </Segment>
         </Fragment>
